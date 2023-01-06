@@ -41,4 +41,4 @@ class DistanceMerger(Merger):
         else:
             to_return.sort(key=lambda x: x[2])
 
-        return list(map(lambda x: (x[0], x[1], str(x[2])), to_return))
+        return list(map(lambda x: (x[0], x[1]), to_return))

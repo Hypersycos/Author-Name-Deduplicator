@@ -45,5 +45,5 @@ selected_merger: merger.Merger = string_to_merger[init_args.merger](remaining, p
 results: list[tuple[str, str]] = selected_merger.run(authors)
 
 # save file
-results.insert(0, ("label", "replace by", "score"))
+results.insert(0, ("label", "replace by"))
 init_args.output.writelines(map(lambda x: "\t".join(x) + "\n", results))
